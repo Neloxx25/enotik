@@ -95,8 +95,7 @@
           console.log("HELLO PIDER LOAD");
           const telegramMessage = document.querySelector("#telegram-message");
           console.log('Telegram WebApp initializing...');
-          if (window.Telegram && window.Telegram.WebApp) {
-            telegramMessage.innerText = "Telegram WebApp найден ✅";
+          if (window.Telegram && window.Telegram.WebApp) {            
             Telegram.WebApp.ready();
             const user = Telegram.WebApp.initDataUnsafe.user;
             console.log('User data:', user);
