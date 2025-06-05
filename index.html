@@ -103,7 +103,7 @@
             if (userId) {
               console.log('Attempting to send userId to Unity:', userId);
               if (typeof unityInstance !== 'undefined' && unityInstance.SendMessage) {
-                unityInstance.SendMessage('GameObject', 'SetUserId', userId.toString());
+                unityInstance.SendMessage('Main Camera', 'SetUserId', userId.toString());
                 console.log('SendMessage called successfully');
               } else {
                 console.error('unityInstance or SendMessage is undefined');
